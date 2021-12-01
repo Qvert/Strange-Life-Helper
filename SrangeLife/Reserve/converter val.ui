@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>426</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #22222e;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>270</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>270</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #fb5b5d;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="Heading">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>10</y>
+           <width>281</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Montserrat SemiBold</family>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: white;</string>
+         </property>
+         <property name="text">
+          <string>КОНВЕРТЕР ВАЛЮТ</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="pic">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>70</y>
+           <width>191</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../../../PycharmProjects/pythonProject2/проект доработка/Icons/exchanging.png</pixmap>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>9</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QComboBox" name="from_currency">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #22222e;
+color: #7d7b7a;
+border: 2px solid #f66867;
+border-radius: 25px;
+padding:15px</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Из валюты:</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>USD - Доллар США</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RUB - Российский рубль</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FRF - Францурский франк</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>BEF - Бельгийский франк</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AUD - Австралийский доллар</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CAD - Канадский доллар</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SGD - Сингапурский доллар</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ATS - Австрийский шиллинг</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EUR - Евро</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NOK - Норвежская крона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>DKK - Датская крона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FIM - Финская крона </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SEK - Шведская крона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>DEM - Немецкая марка</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PTE - Португальское эскудо</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>JPY - Японская валюта</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>GBP - Английский фунт</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CHF - Швейцарский франк</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="isval_">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #22222e;
+color: #7d7b7a;
+border: 2px solid #f66867;
+border-radius: 25px;
+padding:15px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QComboBox" name="to_currency">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #22222e;
+color: #7d7b7a;
+border: 2px solid #f66867;
+border-radius: 25px;
+padding:15px</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>В валюту:</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>USD - Доллар США</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RUB - Российский рубль</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FRF - Францурский франк</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>BEF - Бельгийский франк</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AUD - Австралийский доллар</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CAD - Канадский доллар</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SGD - Сингапурский доллар</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ATS - Австрийский шиллинг</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EUR - Евро</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NOK - Норвежская крона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>DKK - Датская крона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FIM - Финская крона </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SEK - Шведская крона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>DEM - Немецкая марка</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PTE - Португальское эскудо</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>JPY - Японская валюта</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>GBP - Английский фунт</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CHF - Швейцарский франк</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="at_the_val">
+        <property name="font">
+         <font>
+          <family>Montserrat</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #22222e;
+color: #7d7b7a;
+border: 2px solid #f66867;
+border-radius: 25px;
+padding:15px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>9</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="convert_but">
+      <property name="minimumSize">
+       <size>
+        <width>380</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Montserrat SemiBold</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: white;
+	background-color: #fb5b5d;
+	border-radius: 30;
+}
+
+QPushButton:pressed {
+	background-color: #fa4244
+}</string>
+      </property>
+      <property name="text">
+       <string>КОНВЕРТИРУЙ</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
