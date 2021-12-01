@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>418</width>
+    <height>636</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Прогноз погоды</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.528136, y1:0, x2:0.54, y2:1, stop:0 rgba(0, 147, 255, 255), stop:1 rgba(218, 218, 218, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>13</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <property name="leftMargin">
+       <number>29</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="date">
+        <property name="font">
+         <font>
+          <family>Outfit Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;
+color: white</string>
+        </property>
+        <property name="text">
+         <string>Ср.9 Января</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="city">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei Light</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 0, 0);
+color: white;
+border-bottom: 1px solid white;
+alternate-background-color: white;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Выберите город</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Санкт-Петербург</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Новосибирск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Екатеринбург</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Нижний Новгород</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Самара</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Омск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Казань</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Челябинск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ростов-на-Дону</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Чита</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Москва</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Засопка</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Уфа</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Красноярск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Волгоград</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Пермь</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Воронеж</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Саратов</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Краснодар</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Тольятти</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ижевск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ульяновск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Барнаул</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Владивосток</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ярославль</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Иркутск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Тюмень</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Махачкала</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Хабаровск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Новокузнецк</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Оренбург</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кемерово</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Рязань</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Томск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Астрахань</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Калининград</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Улан-Удэ</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Тверь</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Белгород</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Сочи</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Владикавказ</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Саранск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Тамбов</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Стерлитамак</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Якутск</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кострома</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <property name="leftMargin">
+       <number>24</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="temp_like_value">
+        <property name="font">
+         <font>
+          <family>Outfit</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;
+color: white</string>
+        </property>
+        <property name="text">
+         <string>0 ˚C</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>2</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <property name="leftMargin">
+       <number>28</number>
+      </property>
+      <property name="topMargin">
+       <number>7</number>
+      </property>
+      <property name="rightMargin">
+       <number>128</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="itfeels_like">
+        <property name="font">
+         <font>
+          <family>Microsoft JhengHei Light</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;
+color: white</string>
+        </property>
+        <property name="text">
+         <string>По ощущению:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="temp_po_osh">
+        <property name="font">
+         <font>
+          <family>Microsoft JhengHei Light</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: none;
+color: white</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_9">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <property name="rightMargin">
+       <number>30</number>
+      </property>
+      <property name="bottomMargin">
+       <number>28</number>
+      </property>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QPushButton" name="pogoda_yz">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Microsoft YaHei UI Light</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">padding: 20px 20px 20px 20px;
+color: white;
+background-color: rgba(0, 0, 0, 0);
+border: 1.5px solid white;
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>Узнать погоду</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <property name="horizontalSpacing">
+            <number>18</number>
+           </property>
+           <property name="leftMargin">
+            <number>14</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="pixmap_wind">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../Pixmap/zapis.png</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="ind_text">
+               <property name="font">
+                <font>
+                 <family>Outfit Light</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Скорость ветра:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="wind_value">
+               <property name="font">
+                <font>
+                 <family>Microsoft YaHei Light</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: none;
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout_2">
+           <property name="horizontalSpacing">
+            <number>19</number>
+           </property>
+           <property name="leftMargin">
+            <number>13</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="dav_pix">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../Pixmap/dav.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="dav_text">
+               <property name="font">
+                <font>
+                 <family>Outfit Light</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Давление:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="dav_value">
+               <property name="font">
+                <font>
+                 <family>Microsoft YaHei Light</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: none;
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout_3">
+           <property name="horizontalSpacing">
+            <number>18</number>
+           </property>
+           <property name="leftMargin">
+            <number>14</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="vlag_pixmap">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../Pixmap/vlag.png</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="vlag_text">
+               <property name="font">
+                <font>
+                 <family>Outfit Light</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Влажность:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="vlag_value">
+               <property name="font">
+                <font>
+                 <family>Outfit</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: none;
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout_4">
+           <property name="horizontalSpacing">
+            <number>18</number>
+           </property>
+           <property name="leftMargin">
+            <number>14</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>20</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="temp_pixmap">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../Pixmap/temp.jpg</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="spacing">
+              <number>27</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="temp_text">
+               <property name="font">
+                <font>
+                 <family>Outfit Light</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Температура  мин.:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="temp_value">
+               <property name="font">
+                <font>
+                 <family>Outfit</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: none;
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>418</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+background-color: none</string>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>Сменить язык</string>
+     </property>
+     <addaction name="russian"/>
+     <addaction name="english"/>
+    </widget>
+    <addaction name="menu"/>
+    <addaction name="ex"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="action_2">
+   <property name="text">
+    <string>Русский</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Русский</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Английский</string>
+   </property>
+  </action>
+  <action name="ex">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="russian">
+   <property name="text">
+    <string>Русский</string>
+   </property>
+  </action>
+  <action name="english">
+   <property name="text">
+    <string>Английский</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Переводчик</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">
+border-radius: 50px;
+background-color: blue;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: blue</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>33</number>
+         </property>
+         <property name="leftMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Microsoft Sans Serif</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">padding-right: 20px;
+background-color: blue;
+color: white
+</string>
+           </property>
+           <property name="text">
+            <string>Text translate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <family>Cambria</family>
+             <pointsize>28</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px;
+color	: black;
+background-color: white
+</string>
+           </property>
+           <property name="text">
+            <string>T</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">background-color: blue
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>5</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>29</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="rightMargin">
+         <number>317</number>
+        </property>
+        <item>
+         <widget class="QComboBox" name="from_len">
+          <property name="font">
+           <font>
+            <family>Segoe Print</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: black</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>русский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>английский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Африканский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>гаитянский креольский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>албанский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>амхарский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>арабский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>армянский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>азербайджанский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>баскский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>белорусский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>бенгальский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>боснийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>болгарский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>каталонский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хауса</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>кебуано</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>чичева</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>китайский (упрощенный)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>китайский (традиционный)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>корсиканский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хорватский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>чешский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>датский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>голландский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>эсперанто</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>эстонский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>филиппинский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>финский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>французский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>фризский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>галисийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>грузинский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>немецкий</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>греческий</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>гуджарати</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хауса</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>гавайский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>иврит</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хинди</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хмонг</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>венгерский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>исландский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>игбо</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>индонезийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ирландский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>итальянский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>японский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>яванский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>каннада</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>казахский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>кхмерский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>корейский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>курдский (курманджи)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>киргизский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>лаосский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>латинский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>латышский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>литовский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>македонский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>люксембургский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>малагасийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>малайский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>малаялам</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>мальтийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>маори</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>маратхи</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>монгольский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>мьянма (бирманский)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>непальский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>норвежский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>пушту</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>персидский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>польский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>португальский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>панджаби</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>румынский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>самоанский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>шотландский гэльский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сербский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сесото</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>шона</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>синдхи</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сингальский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>словацкий</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>словенский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сомалийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>испанский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сунданский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>суахили</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>шведский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>таджикский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>тамильский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>телугу</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>тайский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>турецкий</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>украинский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>урду</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>узбекский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>вьетнамский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>валлийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>коса</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>идиш</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>йоруба</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>зулу</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="from_text">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-left: 1.5px solid blue;
+border-bottom: 1.5px solid blue;
+border-right: none;
+border-top: none</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>5</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>27</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QComboBox" name="to_lang">
+          <property name="font">
+           <font>
+            <family>Segoe Print</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">alternate-background-color:rgb(128,128,128, 0);
+color: black;
+background-color: white;
+border-bottom: 1px solid white
+</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>английский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>русский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Африканский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>гаитянский креольский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>албанский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>амхарский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>арабский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>армянский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>азербайджанский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>баскский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>белорусский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>бенгальский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>боснийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>болгарский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>каталонский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хауса</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>кебуано</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>чичева</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>китайский (упрощенный)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>китайский (традиционный)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>корсиканский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хорватский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>чешский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>датский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>голландский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>эсперанто</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>эстонский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>филиппинский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>финский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>французский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>фризский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>галисийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>грузинский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>немецкий</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>греческий</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>гуджарати</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хауса</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>гавайский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>иврит</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хинди</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>хмонг</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>венгерский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>исландский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>игбо</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>индонезийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ирландский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>итальянский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>японский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>яванский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>каннада</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>казахский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>кхмерский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>корейский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>курдский (курманджи)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>киргизский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>лаосский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>латинский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>латышский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>литовский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>македонский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>люксембургский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>малагасийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>малайский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>малаялам</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>мальтийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>маори</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>маратхи</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>монгольский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>мьянма (бирманский)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>непальский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>норвежский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>пушту</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>персидский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>польский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>португальский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>панджаби</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>румынский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>самоанский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>шотландский гэльский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сербский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сесото</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>шона</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>синдхи</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сингальский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>словацкий</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>словенский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сомалийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>испанский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сунданский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>суахили</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>шведский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>таджикский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>тамильский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>телугу</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>тайский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>турецкий</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>украинский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>урду</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>узбекский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>вьетнамский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>валлийский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>коса</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>идиш</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>йоруба</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>зулу</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>154</number>
+          </property>
+          <property name="leftMargin">
+           <number>28</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>14</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>Microsoft Sans Serif</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 1.5px solid blue;
+border-radius: 15px</string>
+            </property>
+            <property name="text">
+             <string>↓</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="reverse">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:  blue;
+color: white;
+padding-bottom: 5px;
+border: 1.5px solid blue;
+border-radius: 10px;
+</string>
+            </property>
+            <property name="text">
+             <string>↑↓</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="to_text">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-left: 1.5px solid blue;
+border-bottom: 1.5px solid blue;
+border-right: none;
+border-top: none</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinAndMaxSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>151</number>
+        </property>
+        <property name="rightMargin">
+         <number>147</number>
+        </property>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="translate_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Semibold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+border: 1.5px solid blue;
+border-radius: 25px
+</string>
+          </property>
+          <property name="text">
+           <string>Translate</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="clear_btn">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Semibold</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: blue;
+color: white;
+border-radius: 25px</string>
+          </property>
+          <property name="text">
+           <string>Сlear</string>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>300</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>32</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Русский</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Англйский</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
